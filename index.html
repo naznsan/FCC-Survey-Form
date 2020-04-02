@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC: Survey Form</title>
+</head>
+<body>
+    <h1 id="title">SuperGym Joining Form</h1>
+    <p id="description">Thank you for interest in joining our gym. Please submit this form and a trainer will be in touch shortly.</p>
+
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input id="name" type="text" placeholder="John Doe" required>
+        </div>
+
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input id="email" type="email" placeholder="jdoe@email.com" required>
+        </div>
+
+        <div class="form-group">
+            <label id="number-label" for="number">Age</label>
+            <input id="number" type="number" placeholder="Age" min="16" max="99">
+        </div>
+
+        <div class="form-group">
+            <input type="radio" name="gender" id="male" value="male">Male
+            <input type="radio" name="gender" id="female" value="female">Female
+            <input type="radio" name="gender" id="other" value="other">Other
+        </div>
+
+        <div class="form-group">
+            <p>Which option best describes your training experience?</p>
+            <select id="dropdown" name="experience">
+                <option disabled selected>Select an option</option>
+                <option value="0 ~ 1 year">0 ~ 1 year</option>
+                <option value="1 ~ 2 years">1 ~ 2 years</option>
+                <option value="2 ~ 3 years">2 ~ 3 years</option>
+                <option value="3 ~ 4 years">3 ~ 4 years</option>
+                <option value="4 ~ 5 years">4 ~ 5 years</option>
+                <option value="5+ years">More than 5 years</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>What are the areas of fitness you plan to work on?</p>
+            <span class="clue">(Check all that apply)</span>
+            <input type="checkbox" name="areas-of-fitness" value="Muscle building">Muscle building
+            <input type="checkbox" name="areas-of-fitness" value="Muscle toning">Muscle toning
+            <input type="checkbox" name="areas-of-fitness" value="Fat loss">Fat loss
+            <input type="checkbox" name="areas-of-fitness" value="Staying fit">Staying fit
+        </div>
+
+        <div class="form-group">
+            <textarea id="comments" placeholder="Additional comments..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <button id="submit">Submit</button>
+        </div>        
+    </form>
+    
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
